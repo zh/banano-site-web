@@ -1,0 +1,36 @@
+div.qr-text {
+  font-family: monospace;
+  font-size: 0.8rem;
+  text-align: center;
+
+  margin-top: .7rem;
+
+  background: rgba(250, 224, 66, .2);
+
+  border-radius: 7px;
+  padding: .5rem 1rem;
+
+  width: 200px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+div.qr-copy {
+  font-family: monospace;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+div.qr-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: #A77B0E;
+  background: #FAE042;
+
+  border-radius: 7px;
+  margin-bottom: .7rem;
+}
