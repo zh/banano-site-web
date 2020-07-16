@@ -181,7 +181,7 @@ const Payment = (props) => {
               name="amount"
               value={amount}
               onChange={handleChange}
-              placeholder="100"
+              placeholder="Enter amount"
             />
           </div>
         </div>
