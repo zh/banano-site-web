@@ -17,6 +17,7 @@ const Nav = (props) => {
     <nav id="topNav" className="nav-header">
       <Link to="/">Home</Link>
       <Link to="/pay">Payment</Link>
+      <Link to="/register">Register</Link>
       <a href="/pay" className="icon" onClick={handleColapse}>
         <i className="fa fa-bars"></i>
       </a>

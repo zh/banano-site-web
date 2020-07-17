@@ -14,7 +14,7 @@ const Home = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.history.push("/pay/" + username);
+    props.history.push("/u/" + username);
     window.location.reload();
   };
 
@@ -23,36 +23,43 @@ const Home = (props) => {
     <div className="container">
       <h2>Banano Services</h2>
       <div>
-        <h3>QR payments code</h3>
+        <h3>Pay to any address with QR code</h3>
         Go to <Link to="/pay">Payment</Link> page, fill address and amount of
         BANANO and press "Pay" button. Will give you nice QR code to do the
         payment.
       </div>
       <div>
-        <h3>Prefilled payment form</h3>
+        <h3>Register your username and address</h3>
         <div>
-          Go to <b>https://banano.site/pay/your_username</b>. If somebody
-          already using that username, the address in the form will be
-          prefilled.
-          <br /> If not, fill the form and claim that username with pressing
-          "Save" button.
+          BANANO addresses are pretty long and impossible to remember.
+          Registering will connect your address to easy to remember username and
+          allow you to have a shorter URL with QR code for payments (see below).
+        </div>
+        <div>
+          Go to <Link to="/register">Register</Link> page, fill the form and
+          claim your username with pressing "Save" button.
         </div>
         <div>
           Avoid using special words, like <i>root,admin,test</i> etc. for
           username
         </div>
+      </div>
+      <div>
+        <h3>Easy URL for QR code payments</h3>
         <div>
-          In the future send your friends to{" "}
-          <b>https://banano.site/pay/your_username</b>, so they can easy pay you
-          with one button click.
+          Register your username and send your friends to{" "}
+          <b>https://banano.site/u/your_username</b>, so they can easy pay you
+          with QR code.
         </div>
         <div>
           <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-25">
-                <label>Try some username:</label>
+                <label>
+                  Try some username (example: <b>zhesto</b>):
+                </label>
               </div>
-              <div className="col-75">
+              <div className="col-25">
                 <input
                   type="text"
                   name="username"
@@ -64,7 +71,11 @@ const Home = (props) => {
               </div>
             </div>
             <div className="row">
-              <input type="submit" className="right-button" value="Pay" />
+              <input
+                type="submit"
+                className="left-button"
+                value="Pay with QR code"
+              />
             </div>
           </form>
         </div>

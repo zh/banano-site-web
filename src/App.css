@@ -34,6 +34,17 @@ label {
     float: right;
 }
 
+.left-button {
+    margin-top: 6px;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
 /* Style the container */
 .container {
     border-radius: 5px;
@@ -44,6 +55,13 @@ label {
 .col-right {
     float: right;
     margin-top: 6px;
+}
+
+.col-center {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /* Floating column for labels: 25% width */

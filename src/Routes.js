@@ -5,7 +5,9 @@ import Pages from "./Pages";
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/pay/:uid?" component={Pages.Payment} />
+      <Route path="/pay" component={Pages.Payment} />
+      <Route exact path="/register" component={Pages.Register} />
+      <Route path="/u/:uid?/:amount?" component={Pages.QRCodePage} />
       <Route exact path="/" component={Pages.Home} />
     </Switch>
   );
