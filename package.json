@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "banano-unit-converter": "^0.1.0",
     "banano-uri-generator": "^0.1.0",
     "nano-address-validator": "^3.0.0",
